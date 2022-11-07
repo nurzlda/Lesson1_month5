@@ -7,12 +7,11 @@ class CounterModel  {
 
    fun increment(){
 
-        counter ++
 
+        counter ++
     }
 
     fun decrement(){
-
         counter--
     }
 

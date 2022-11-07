@@ -35,16 +35,14 @@ class MainActivity : AppCompatActivity(), CounterView {
 
     override fun updateCounter(model: Int) {
         binding.tvCounter.text=model.toString()
-        if (model == 10){
-            Toast.makeText(this, "Поздравляем", Toast.LENGTH_SHORT).show()
-        }else if(model == 15){
-            presenter.changeColor()
-        }
-
     }
 
     override fun changeColor(color: Int) {
         binding.tvCounter.setTextColor(color)
+    }
+
+    override fun toast() {
+        Toast.makeText(this, "Поздравляем", Toast.LENGTH_SHORT).show()
     }
 
 
