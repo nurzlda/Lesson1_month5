@@ -11,10 +11,10 @@ class Presenter {
     private lateinit var view: CounterView
 
     fun increment(){
-        if (
-            model.getCounter() == 10-1
-        )
-        {toast()} else if (model.getCounter() == 15-1){
+        if (model.getCounter() == 10-1) {
+            toast()
+        }
+        else if (model.getCounter() == 15-1){
             changeColor()
         }
         model.increment()

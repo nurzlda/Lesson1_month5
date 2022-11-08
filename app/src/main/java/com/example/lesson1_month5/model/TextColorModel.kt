@@ -7,6 +7,7 @@ class TextColorModel {
 
     private val color = Color.GREEN
 
+
     fun getColor() : Int{
         return color
     }

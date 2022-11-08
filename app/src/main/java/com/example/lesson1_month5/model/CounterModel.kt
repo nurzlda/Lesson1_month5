@@ -6,8 +6,6 @@ class CounterModel  {
     private var counter = 0
 
    fun increment(){
-
-
         counter ++
     }
 
@@ -19,6 +17,4 @@ class CounterModel  {
         return counter
 
     }
-
-
 }

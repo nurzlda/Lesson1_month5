@@ -17,7 +17,6 @@ class MainActivity : AppCompatActivity(), CounterView {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
         presenter.attachView(this)
-
         onClick()
     }
 
@@ -29,8 +28,6 @@ class MainActivity : AppCompatActivity(), CounterView {
         binding.btnDecrement.setOnClickListener {
            presenter.decrement()
         }
-
-
     }
 
     override fun updateCounter(model: Int) {
@@ -44,6 +41,4 @@ class MainActivity : AppCompatActivity(), CounterView {
     override fun toast() {
         Toast.makeText(this, "Поздравляем", Toast.LENGTH_SHORT).show()
     }
-
-
 }
